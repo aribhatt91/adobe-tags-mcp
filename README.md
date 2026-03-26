@@ -111,13 +111,10 @@ ADOBE_CLIENT_ID=your_client_id
 ADOBE_CLIENT_SECRET=your_client_secret
 ADOBE_ORG_ID=your_org_id@AdobeOrg
 ADOBE_TECHNICAL_ACCOUNT_ID=your_technical_account@techacct.adobe.com
-ADOBE_PRIVATE_KEY_PATH=./private.key
 
 # Optional: lock to a specific company ID (recommended for production use)
 ADOBE_COMPANY_ID=COxxxxxxxxxxx
 
-# Optional: restrict to dev environment builds only (default: true)
-ALLOW_DEV_BUILDS_ONLY=true
 ```
 
 ### Installation
@@ -153,8 +150,7 @@ Restart Claude Desktop. The server will appear in the tools panel.
 ### Development mode (with live reload)
 
 ```bash
-npm run inspect      # Opens MCP inspector at localhost:5173
-npm run typecheck:watch  # Type checking in parallel
+npm run test      # Opens MCP inspector at localhost:6274
 ```
 
 ---
