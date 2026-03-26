@@ -1,0 +1,41 @@
+{
+  "name": "adobe-ai-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for managing Adobe Launch and Google Tag Manager",
+  "license": "ISC",
+  "author": "aribhatt91",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "tag-manager-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch src/index.ts",
+    "start": "node build/index.js",
+    "prepare": "npm run build",
+    "clean": "rm -rf build",
+    "test": "npx @modelcontextprotocol/inspector tsx src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "adobe-launch",
+    "google-tag-manager",
+    "analytics"
+  ],
+  "devDependencies": {
+    "@jest/globals": "^30.2.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.2.3",
+    "jest": "^30.2.0",
+    "nock": "^14.0.11",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "axios": "^1.13.5",
+    "dotenv": "^17.2.4",
+    "zod": "^4.3.6"
+  }
+}

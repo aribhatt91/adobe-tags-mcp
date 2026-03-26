@@ -1,0 +1,9 @@
+node_modules/
+build/
+.env
+.env.local
+*.log
+.DS_Store
+Thumbs.db
+*.swp
+EOF
